@@ -21,6 +21,7 @@ public class OrderRepositoryV1 {
             }
             // 일반적으로 상품을 저장할 때 1초(1000ms)가 걸린다고 가정한다.
             sleep(1000);
+            trace.end(status);
         } catch (Exception e) {
             trace.exception(status, e);
             throw e;
